@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promptify 🔥</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>PROMPTIFY 🔥</h1>
+
+    <textarea id="task" placeholder="Describe your task here..."></textarea>
+
+    <select id="category">
+      <option>Blog Writing</option>
+      <option>Caption Writing</option>
+      <option>Code Debugging</option>
+      <option>Marketing Ad Copy</option>
+      <option>Interview Q&A Generator</option>
+    </select>
+
+    <select id="tone">
+      <option>Professional</option>
+      <option>Casual</option>
+      <option>Funny</option>
+      <option>Bold</option>
+    </select>
+
+    <button onclick="generatePrompt()">🚀 Generate Prompt</button>
+
+    <textarea id="output" readonly></textarea>
+    <button id="copyBtn" onclick="copyPrompt()">📋 Copy Prompt</button>
+  </div>
+
+</body>
+</html>
